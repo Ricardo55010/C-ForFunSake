@@ -10,8 +10,8 @@ Welcome to GDB Online.
 #include <stdlib.h>
 int main()
 {
-    puts("Hello World");//comes from stdlib
-
+    if(puts("Hello World") == EOF)//comes from stdlib
+        return EXIT_FAILURE;
     return EXIT_SUCCESS; //comes from stdlib.h
     //probablye something like #define EXIT_SUCESS 0
 }
